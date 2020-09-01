@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 60%;
+}
+
+i {
+    margin-right: 10px;
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+h2{
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(230, 230, 230);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+.avatar{
+    margin: 10px 0;
+    max-width:80%;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+}
+
+.my_button{
+    margin: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px  solid rgb(2, 159, 187);
+    color: rgb(2, 159, 187);
+    border-radius: 5px;
+    padding: 12px 25px;
+    max-width: 100%;
+    background-color: transparent;
+    transition: all .3s;
+    font-size: 1.5rem;
+}
+
+
+.my_button:hover {
+    border: 1px  solid rgb(0, 194, 228);
+    color: rgb(0, 194, 228);
+    background-color: rgba(2, 159, 187, .1);
+}
+
+.my_button:actived {
+    top: 1;
+}
+
+.my_button span{
+    font-size: 1.5rem;
+}
+
+
