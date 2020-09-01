@@ -14,7 +14,7 @@ i {
 }
 
 body{
-    background-color: rgb(32, 32, 32);
+    background-color: #131313;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -42,30 +42,33 @@ h2{
 }
   
 .avatar{
-    margin: 10px 0;
+    margin: 0;
     max-width:80%;
 }
 
 .links{
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 90%;
+    max-width: 75%;
 }
 
 .my_button{
-    margin: 10px;
+    margin: 5px;
     text-decoration: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     border: 1px  solid rgb(2, 159, 187);
-    color: rgb(2, 159, 187);
     border-radius: 5px;
-    padding: 12px 25px;
-    max-width: 100%;
+    color: rgb(2, 159, 187);
+    padding: 12px 0px;
+    width: 90%;
     background-color: transparent;
     transition: all .3s;
     font-size: 1.5rem;
@@ -78,12 +81,23 @@ h2{
     background-color: rgba(2, 159, 187, .1);
 }
 
-.my_button:actived {
-    top: 1;
+.my_button:active {
+    position: relative;
+    top: 1px;
 }
 
 .my_button span{
     font-size: 1.5rem;
 }
 
+@media (min-width: 460px) {
 
+.my_button{
+    padding: 12px 20px;
+    width: 42%;
+}
+.my_button span{
+    font-size: 1.7rem;
+}
+
+}
